@@ -714,7 +714,7 @@ void ofxSDFFont::drawGlyph( char s, float size, ofVec2f & position, float baseli
         
         // add two triangles per glyph
         
-        ofVec2f vertices[4];
+        ofPoint vertices[4];
         vertices[0].set((position.x + ((horiBearingX ) * size)), (position.y + (-baseline + horiBearingY) * size));
         vertices[1].set((position.x + ((horiBearingX  + width) * size)), (position.y + (-baseline +  horiBearingY) * size));
         vertices[2].set((position.x + ((horiBearingX ) * size)), (position.y + (height -baseline +  horiBearingY) * size));
